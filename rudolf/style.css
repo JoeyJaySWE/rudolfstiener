@@ -1,0 +1,16 @@
+/*
+Theme Name: Rudolf
+Theme URI:
+Author: Mark Mados
+Author URI:
+Description: A website for Rudolf Steiner SChool.
+Version: 1.0
+*/
+
+body {
+  background: #37ad19;
+}
+
+.home_container {
+  color: red;
+}
