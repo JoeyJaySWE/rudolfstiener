@@ -5,4 +5,6 @@ The board at the wandorf based school Rudolf Steiner in central Gothenburg, Swed
 
 <a href="https://trello.com/b/8ZpbQkB9/rudolf-steiner" target="_blank">Road Map (Trello board)</a>
 
+<a href="https://nya.rudolf-steiner.joeyjaydigital.com/" target="_blank">Live Version</a>
+
 ## Update Log
