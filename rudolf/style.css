@@ -8,11 +8,14 @@ Version: 1.0
 */
 
 body {
-  background: #37ad19;
+  background: #eee;
 }
 
-.home_container {
-  color: red;
+/* .home_container {
+} */
+
+a {
+  text-decoration: none;
 }
 
 .active {
