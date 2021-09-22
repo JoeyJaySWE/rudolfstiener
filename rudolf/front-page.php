@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<!-- <?php var_dump("front-page.php") ?> -->
 <?php if (have_posts()) : ?>
 
     <?php while (have_posts()) : the_post(); ?>
