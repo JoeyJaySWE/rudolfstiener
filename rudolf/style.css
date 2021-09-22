@@ -14,8 +14,3 @@ body {
 .home_container {
   color: red;
 }
-
-.active {
-  border-bottom: 3px solid cyan;
-  padding-bottom: 2px;
-}
