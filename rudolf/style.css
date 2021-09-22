@@ -18,7 +18,14 @@ a {
   text-decoration: none;
 }
 
-nav a:hover{
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: space-evenly;
+}
+nav a:hover {
   border-bottom: 2px solid cyan;
   padding-bottom: 3px;
 }
@@ -27,4 +34,3 @@ nav a:hover{
   border-bottom: 3px solid rgb(1, 230, 230);
   padding-bottom: 2px;
 }
-
