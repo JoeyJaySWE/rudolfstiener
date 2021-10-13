@@ -1,0 +1,24 @@
+{
+  "name": "slideshow-cgb-guten-block",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An easy to use Slideshow with controller and video support.",
+	"author": "Joey Jay",
+  "keywords": [
+		"WordPress",
+		"block",
+    "slideshow",
+    "youtube"
+	],
+  "main": "build/index.js",
+	"devDependencies": {
+		"@wordpress/scripts": "^9.0.0"
+	},
+  "scripts": {
+		"build": "wp-scripts build",
+		"format:js": "wp-scripts format-js",
+		"lint:js": "wp-scripts lint-js",
+		"packages-update": "wp-scripts packages-update",
+		"start": "wp-scripts start"
+	}
+}

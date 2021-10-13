@@ -7,30 +7,1073 @@ Description: A website for Rudolf Steiner SChool.
 Version: 1.0
 */
 
-body {
-  background: #eee;
+/* @font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-VariableFont_wght.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
 }
-
-/* .home_container {
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-VariableFont_wght.woff') format('woff');
+  font-weight: 600;
+  font-style: bold;
+}
+@font-face {
+  font-family: 'Raleway';
+  src: url('fonts/Raleway-Italic-VariableFont_wght.woff') format('woff');
+  font-weight: 700;
+  font-style: italic;
 } */
 
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@400;600;700&display=swap");
+
+:root {
+	--bg-color: #eee;
+	--burger-bars: #fff;
+	--link-color: #fff;
+	--default-link-color:rgba(77, 148, 254, 1);
+	--link-color-desktop-submenu: rgba(35, 35, 35, 1);
+	--button-bg-color: rgba(0, 102, 151, 1);
+	--form-field-bg-color: rgba(220 220 220, 1);
+	--title-color: #000;
+	--mobile-nav-header-bg: #dfdfe1;
+	--burger-menu-bg: #054d72;
+	--desktop-menu-link-color: #000;
+	--desktop-submenu-bg-color: #fff;
+	--desktop-submenu-bg-color-first: #a5c0cd;
+	--desktop-submenu-bg-color-first-hover: rgba(165, 192, 205, 0.4);
+	--desktop-submenu-bg-color-second: #acdea4;
+	--desktop-submenu-bg-color-second-hover: rgba(172, 222, 164, 0.4);
+	--desktop-submenu-bg-color-third: #fdfca4;
+	--desktop-submenu-bg-color-third-hover: rgba(253, 252, 164, 0.4);
+	--desktop-submenu-bg-color-fourth: #f3b35a;
+	--desktop-submenu-bg-color-fourth-hover: rgba(243, 179, 90, 0.4);
+	--desktop-submenu-bg-color-fith: #ed7069;
+	--desktop-submenu-bg-color-fith-hover: rgba(237, 112, 105, 0.4);
+	--footer-header-color: #0a6697;
+	--text-color: #fff;
+}
+/*Debugg *{
+	border:1px solid blue;
+} */
+html {
+	font-size: 16px;
+}
+
+body {
+	background: var(--bg-color);
+	margin: 0px;
+	font-family: "Arial", sans-serif;
+}
+
+.home_container {
+	margin-top: 90px;
+	margin-bottom: 65px;
+	overflow-x: clip;
+}
+.add-bottom-margin {
+	margin-bottom: 65px;
+}
+
+.home_container h2,
+.home_container h3,
+.home_container div:not([class], [id]),
+.home_container p:not([class]),
+.wp-block-columns,
+.add-side-margins {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.home_container .with_frm_style input,
+.home_container .with_frm_style textarea {
+	background-color: var(--form-field-bg-color);
+	background-color: rgba(220, 220, 220, 1);
+}
+
+.home_container .frm_style_formidable-style.with_frm_style .frm_submit button {
+	border-radius: 10px;
+	height: 40px;
+	background-color: var(--button-bg-color);
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.karta {
+	width: 100%;
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
 a {
-  text-decoration: none;
+	font-family: "Raleway";
+	font-weight: 600;
+	font-style: bold;
 }
 
+
+h2 {
+	margin-top: 32px;
+	margin-bottom: 16px;
+	font-size: 1.5rem;
+	font-family: Raleway;
+	font-weight: 600;
+}
+
+.wp-block-columns {
+	margin-bottom: 65px;
+}
+
+.square-radius {
+	border-radius: 15px;
+	padding-right: 16px;
+}
+
+.rect-radius {
+	border-radius: 45px;
+}
+
+.footer_container {
+	bottom: 0px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--footer-header-color);
+	color: var(--text-color);
+}
+
+a.wp-block-button__link {
+	border: none;
+}
+.custom-card-container * {
+	color: #4d94fe;
+	text-decoration: none;
+	border-radius: 15px;
+}
+
+h1 {
+	margin-top: 385px;
+	text-align: center;
+}
+
+.about_school_slide {
+	padding: 15px !important;
+}
+
+.footer_info h1 {
+	margin-top: unset;
+}
+
+.metaslider .caption-wrap {
+	opacity: 1 !important;
+}
+
+.footer_info {
+	padding: 20px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: top;
+}
+
+.home_container .has-text-align-right {
+	padding-right: 16px;
+}
+
+.facebook_footer {
+	width: 38px;
+	height: 38px;
+}
+
+.instagram_footer {
+	width: 38px;
+	height: 38px;
+}
+
+.home_container .wp-block-buttons.is-content-justification-right.is-vertical {
+	padding-right: 16px;
+
+}
+
+.wp-block-columns.img-txt {
+	margin-top: 40px;
+	display: flex;
+	padding-right: unset;
+	align-items: center;
+	flex-wrap: wrap-reverse;
+}
+.wp-block-columns.img-txt img {
+	max-height: 345px;
+	object-fit: cover;
+}
+.insta_logo {
+	height: 20px;
+}
+
+.facebook_logo {
+	height: 20px;
+}
+
+.wp-block-buttons {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.rudolf_logo_footer {
+	height: 80px;
+}
+
+.with_frm_style,
+.with_frm_style form,
+.with_frm_style .frm-show-form div.frm_description p {
+	width: fit-content;
+}
+
+.frm_forms.frm_style_formidable-style.with_frm_style {
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.about_footer {
+	text-align: center;
+}
+
+.rudde_logo_container {
+	display: flex;
+	align-items: center;
+}
+
+.testomonial {
+	background-color: var(--burger-menu-bg);
+	height: 620px;
+}
+.testomonial #metaslider_container_503 ul.slides li {
+	display: flex !important;
+	flex-direction: column;
+	width: 100% !important;
+	height: 100%;
+	justify-content: space-evenly;
+	align-items: center;
+}
+.testomonial #metaslider_container_503 img {
+	position: relative;
+	width: 250px;
+	height: 250px;
+	margin-top: 24px;
+	object-fit: cover;
+	border-radius: 15px;
+}
+.testomonial #metaslider_container_503 .caption-wrap {
+	width: 90%;
+	min-width: 343px;
+	background-color: transparent;
+	color: var(--link-color);
+	position: unset;
+	opacity: 1;
+}
+.testomonial #metaslider_container_503 .caption-wrap .caption {
+	text-align: left;
+}
+.testomonial #metaslider_container_503 .caption-wrap .caption h3 {
+	font-size: 1.5rem;
+	font-family: 'Raleway';
+}
+.testomonial #metaslider_container_503 .caption-wrap .caption p {
+	padding: 0px;
+	margin-top: 16px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.testomonial
+	#metaslider_container_503
+	#metaslider_503
+	ul.flex-direction-nav
+	li
+	a.flex-prev,
+.testomonial
+	#metaslider_container_503
+	#metaslider_503
+	ul.flex-direction-nav
+	li
+	a.flex-next {
+	border: none;
+	max-width: 40px;
+	height: 40px;
+	top: 95%;
+}
+
+.footer_text {
+	font-size: 12px;
+
+	text-align: center;
+}
+
+.kontakt_footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.lediga_footer {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.footer_links {
+	font-size: 12px;
+}
+
+.footer_social {
+	padding: 10px;
+	display: flex;
+	flex-wrap: nowrap;
+	align-content: center;
+	align-items: center;
+	justify-content: center;
+	gap: 20px;
+}
+
+hr {
+	width: 80%;
+	background-color: #9a9a9a;
+	height: 1px;
+	border: none;
+}
+
+.ms-is-small.metaslider.ms-theme-bubble
+	.flexslider
+	ul.slides
+	.caption-wrap
+	.caption,
+.ms-is-small.metaslider.ms-theme-bubble .rslides .caption-wrap .caption,
+.ms-is-small.metaslider.ms-theme-bubble .nivoSlider .nivo-caption {
+	font-size: 20px !important;
+}
+
+.wp-block-group {
+	padding: 2rem !important;
+}
+
+.pedagogik_text {
+	text-align: center;
+	padding: 20px;
+	font-weight: 400;
+}
+
+.metaslider.ms-theme-bubble .flexslider ul.slides .caption-wrap .caption,
+.metaslider.ms-theme-bubble .rslides .caption-wrap .caption,
+.metaslider.ms-theme-bubble .nivoSlider .nivo-caption {
+	font-size: 40px !important;
+}
+
+.wp-block-media-text.has-media-on-the-right {
+	padding: 2rem;
+}
+.hero,
+.hero img {
+	width: 100%;
+	height: 231px;
+	object-fit: cover;
+	max-height: 540px;
+}
+
+.top {
+	position: absolute;
+	top: 90px;
+	z-index: -1;
+}
+.wp-block-media-text {
+	padding: 2rem;
+}
+
+.rudolf_loga_footer {
+	width: 340px;
+	height: 200px;
+	display: none;
+}
+
+a {
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+.rudolf_loga_header_mobile {
+	height: 45px;
+	width: 240px;
+	padding-left: 5%;
+}
+
+.home_container a:not([class]) {
+	color: var(--default-link-color);
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 400;
+    text-decoration: underline;
+}
+
+
+.home_container h1 a:not([class]){
+	text-decoration: none;
+}
+.home_container h1 a:not([class]) {
+	color: var(--title-color);
+	font-size: 2rem;
+}
+.wp-block-columns {
+	margin-top: unset;
+}
 nav {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-content: center;
-  justify-content: space-evenly;
-}
-nav a:hover {
-  border-bottom: 2px solid cyan;
-  padding-bottom: 3px;
+	top: 0;
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: space-evenly;
+	max-width: unset;
+	align-items: center;
+	width: 100%;
+	position: fixed;
+	height: 90px;
+	background-color: rgb(223, 223, 225);
+	z-index: 10;
+	color: var(--text-color);
 }
 
-.active {
-  border-bottom: 3px solid rgb(1, 230, 230);
-  padding-bottom: 2px;
+nav.nav-bar-mobile {
+	justify-content: flex-start;
+	background-color: var(--footer-header-color);
+}
+.burger-btn {
+	position: fixed;
+	z-index: 4;
+	display: flex;
+	width: 48px;
+	height: 48px;
+	top: 16px;
+	right: 16px;
+	flex-direction: column;
+	justify-content: space-around;
+	align-items: center;
+}
+.burger-btn:hover {
+	cursor: pointer;
+}
+.burger-btn div {
+	height: 4px;
+	width: 36px;
+	background-color: var(--burger-bars);
+	border-radius: 4px;
+	transform-origin: left;
+	transition: transform ease-in 700ms, opacity ease-in 700ms;
+}
+
+nav .burger-menu {
+	padding-top: 160px;
+	padding-left: 0px;
+	right: 0;
+	z-index: 3;
+	display: flex;
+	position: fixed;
+	overflow-y: auto;
+	top: 0px;
+	width: 0%;
+	flex-direction: column;
+	margin-top: 0;
+	background-color: var(--burger-menu-bg);
+	height: 100%;
+	transition: width ease-in-out 700ms;
+}
+
+nav .burger-menu.open {
+	width: 70%;
+	max-width: 400px;
+}
+
+nav li {
+	display: block;
+}
+
+nav .burger-menu li {
+	padding: 21px 16px;
+	border-bottom: 1px solid #fff;
+	display: flex;
+	white-space: nowrap;
+}
+
+nav .burger-menu ul li {
+	max-width: 120px;
+}
+
+nav .burger-menu ul li a {
+	white-space: break-spaces;
+}
+
+nav .burger-menu a {
+	color: var(--link-color);
+	font-size: 1.5rem;
+	white-space: nowrap;
+	font-weight: 400;
+}
+
+nav .burger-menu .submenu-link {
+	font-size: 18px;
+}
+
+nav .burger-menu summary {
+	white-space: nowrap;
+}
+
+.nav-bar-desktop a,
+.nav-bar-mobile a {
+	font-weight: 400;
+}
+
+nav a:hover {
+	text-decoration: underline;
+	text-decoration-color: var(--link-color);
+}
+
+.nav-bar-desktop a.active,
+.nav-bar-mobile a.active {
+	font-weight: 700;
+	text-decoration-color: var(--link-color);
+}
+
+::marker {
+	color: #fff;
+}
+
+.burger-menu details ul li {
+	border: none;
+}
+
+.nav-bar-desktop {
+	display: none;
+}
+nav.submenu-desktop {
+	position: unset;
+	width: 1100px;
+	margin: auto;
+	margin-top: 600px;
+	display: none;
+	height: 65px;
+	box-sizing: border-box;
+	background-color: var(--desktop-submenu-bg-color);
+}
+
+nav.submenu-desktop li {
+	box-sizing: border-box;
+	width: 220px;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	transition: background 700ms ease-in-out;
+}
+
+nav.submenu-desktop li.active {
+	text-decoration: none;
+}
+
+nav.submenu-desktop li:first-child {
+	background-color: var(--desktop-submenu-bg-color-first);
+	box-shadow: none;
+}
+nav.submenu-desktop li:first-child:hover,
+nav.submenu-desktop li:first-child:hover.active {
+	background-color: var(--desktop-submenu-bg-color-first-hover);
+}
+nav.submenu-desktop li:first-child.active {
+	box-shadow: 0px 0px 0px 3px var(--desktop-submenu-bg-color-first) inset;
+	background-color: transparent;
+	border: none;
+}
+nav.submenu-desktop li:nth-child(2n) {
+	background-color: var(--desktop-submenu-bg-color-second);
+}
+nav.submenu-desktop li:nth-child(2n):hover,
+nav.submenu-desktop li:nth-child(2n):hover.active {
+	background-color: var(--desktop-submenu-bg-color-second-hover);
+}
+nav.submenu-desktop li:nth-child(2n).active {
+	box-shadow: 0px 0px 0px 3px var(--desktop-submenu-bg-color-second) inset;
+	background-color: transparent;
+	border: none;
+}
+nav.submenu-desktop li:nth-child(3n) {
+	background-color: var(--desktop-submenu-bg-color-third);
+}
+nav.submenu-desktop li:nth-child(3n):hover,
+nav.submenu-desktop li:nth-child(3n):hover.active {
+	background-color: var(--desktop-submenu-bg-color-third-hover);
+}
+nav.submenu-desktop li:nth-child(3n).active {
+	box-shadow: 0px 0px 0px 3px var(--desktop-submenu-bg-color-third) inset;
+	background-color: transparent;
+	border: none;
+}
+nav.submenu-desktop li:nth-child(4n) {
+	background-color: var(--desktop-submenu-bg-color-fourth);
+}
+nav.submenu-desktop li:nth-child(4n):hover,
+nav.submenu-desktop li:nth-child(4n):hover.active {
+	background-color: var(--desktop-submenu-bg-color-fourth-hover);
+}
+nav.submenu-desktop li:nth-child(4n).active {
+	box-shadow: 0px 0px 0px 3px var(--desktop-submenu-bg-color-fourth) inset;
+	background-color: transparent;
+	border: none;
+}
+nav.submenu-desktop li:nth-child(5n) {
+	background-color: var(--desktop-submenu-bg-color-fith);
+}
+nav.submenu-desktop li:nth-child(5n):hover,
+nav.submenu-desktop li:nth-child(5n):hover.active {
+	background-color: var(--desktop-submenu-bg-color-fith-hover);
+}
+nav.submenu-desktop li:nth-child(5n).active {
+	box-shadow: 0px 0px 0px 3px var(--desktop-submenu-bg-color-fith) inset;
+	background-color: transparent;
+	border: none;
+}
+
+nav.submenu-desktop li .desktop-submenu-link,
+nav.submenu-desktop li .desktop-submenu-link:hover {
+	color: var(--link-color-desktop-submenu);
+	text-decoration: none;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.logga {
+	height: 65;
+	margin-left: 20px;
+}
+
+.slideshow ul {
+	height: auto;
+	width: 650px;
+	box-sizing: border-box;
+	overflow: hidden;
+	flex-wrap: nowrap;
+}
+
+#slideshow.slideshow ul li {
+	min-height: 350px;
+	min-width: 850px;
+	margin: 0px;
+	left: 0px;
+}
+
+#slideshow.slideshow ul li figure {
+	width: 100%;
+}
+
+#slideshow.slideshow ul li figure img {
+	object-fit: contain;
+}
+
+.home_image img {
+	width: 100%;
+	height: auto;
+}
+.wp-block-media-text.pedagogik_article {
+	margin-left: 12%;
+	margin-right: 12%;
+	margin-top: 70px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.wp-block-media-text.has-media-on-the-right.pedagogik_article {
+	margin-left: 12%;
+	margin-right: 12%;
+	margin-top: 40px;
+	padding: 0px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	align-items: center;
+}
+.pedagogik_article div.wp-block-media-text__content {
+	padding: 0px;
+	margin-top: 30px;
+	max-width: 470px;
+	box-sizing: border-box;
+}
+.pedagogik_article .wp-block-media-text__content p:not(class) {
+	padding: 0px;
+	max-width: 470px;
+	box-sizing: border-box;
+	margin-top: 0px;
+}
+
+.pedagogik_article img {
+	border-radius: 45px;
+	width: 100%;
+	height: 330px;
+	object-fit: cover;
+	max-width: 470px;
+}
+.custom-card-container .wp-block-image .aligncenter {
+	display: block;
+}
+.custom-card-container .wp-block-image img {
+	width: 100%;
+	object-fit: cover;
+	height: 254px;
+}
+.home_container .custom-card-container h2:not([class]), .home_container .custom-card-container p:not([class]){
+	padding-left: 0px;
+	padding-right:0px;
+
+}
+
+.custom-slideshow-overlay {
+	position: absolute;
+	inset: 0px;
+}
+.metaslider {
+	box-sizing: border-box;
+}
+
+@media screen and (min-width: 850px) {
+	h1 {
+		margin-top: 695px;
+	}
+	.home_container h1 a:not([class]) {
+		font-size: 4rem;
+
+	}
+
+	h2 {
+		font-size:2rem;
+		margin-top: 64px;
+		margin-bottom: 32px;
+	}
+
+	.custom-card-container .wp-block-image img {
+		height: 370px;
+	}
+
+	.footer_info {
+		padding-bottom: 55px;
+		padding-top: 65px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: flex-start;
+	}
+
+	.footer_titel {
+		font-size: 24px;
+		font-weight: 700;
+		font-family: "Raleway";
+		margin-top: 0;
+	}
+
+	.karta {
+		width: 80%;
+	}
+
+	.rudolf_loga_header_desktop {
+		height: 55px;
+		width: 305px;
+		padding-left: 5%;
+	}
+	.rudolf_loga_footer {
+		width: 340px;
+		height: 200px;
+		display: block;
+	}
+
+	.metaslider.ms-theme-bubble .flexslider ul.slides .caption-wrap,
+	.metaslider.ms-theme-bubble .rslides .caption-wrap,
+	.metaslider.ms-theme-bubble div.nivoSlider .nivo-caption {
+		background: linear-gradient(rgba(0, 0, 0, 0), #0a6494) !important;
+	}
+
+	.intranet_image {
+		width: 100%;
+		height: 540px;
+		object-fit: cover;
+	}
+
+	.about_school_slide {
+		padding: 15px !important;
+	}
+
+	.hero,
+	.hero img {
+		width: 100%;
+		height: 540px;
+		object-fit: cover;
+		/*     max-height: 540px; */
+	}
+	.wp-block-columns.img-txt {
+		margin-top: 64px;
+		padding-right: 6%;
+	}
+
+	.wp-block-columns {
+		padding-left: 12%;
+	}
+
+	.wp-block-columns.img-txt img {
+		max-height: 465px;
+		object-fit: cover;
+	}
+	.wp-block-media-text.pedagogik_article {
+		margin-left: 12%;
+		margin-right: 12%;
+		margin-top: 70px;
+		padding: 0px;
+		gap: 50px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.wp-block-media-text.has-media-on-the-right.pedagogik_article {
+		margin-left: 12%;
+		margin-right: 12%;
+		margin-top: 90px;
+		padding: 0px;
+		display: flex;
+		flex-direction: row-reverse;
+		justify-content: space-between;
+		align-items: center;
+	}
+	.pedagogik_article div.wp-block-media-text__content {
+		padding: 0px;
+		max-width: 470px;
+		margin-top: 0px;
+		box-sizing: border-box;
+	}
+	.pedagogik_article .wp-block-media-text__content p:not(class) {
+		padding: 0px;
+		max-width: 470px;
+		box-sizing: border-box;
+		margin-top: 0px;
+	}
+	.pedagogik_article img {
+		border-radius: 45px;
+		width: 100%;
+		height: 330px;
+		object-fit: cover;
+		max-width: 470px;
+	}
+	.insta_logo {
+		height: 20px;
+	}
+	.home_container h2,
+	.home_container h3,
+	.home_container div:not([class], [id]),
+	.home_container p:not([class]),
+	.wp-block-buttons,
+	.wp-blocks-columns,
+	iframe,
+	.add-side-margins {
+		padding-left: 12%;
+		padding-right: 12%;
+		padding-bottom: 10px;
+		line-height: 25px;
+	}
+
+	.home_container .has-text-align-right {
+		padding-right: 12%;
+	}
+
+	.home_container .wp-block-buttons.is-content-justification-right.is-vertical {
+		padding-right: 12%;
+	}
+
+	.custom-card-container * {
+		color: #4d94fe;
+		text-decoration: none;
+		border-radius: 15px;
+	}
+	.wp-block-columns {
+		margin-top: 64px;
+	}
+	.facebook_logo {
+		height: 22px;
+	}
+
+	.footer_container {
+		background-color: var(--footer-header-color);
+		position: relative;
+		height: auto;
+		width: 100%;
+		display: flex;
+		flex-direction: column;
+		color: var(--text-color);
+	}
+
+	.rudolf_logo_footer {
+		height: 150px;
+	}
+
+	.rudde_logo_container {
+		display: flex;
+		align-items: center;
+	}
+
+	.footer_text {
+		font-size: 16px;
+		margin: 0;
+		font-weight: 400;
+		font-family: "Raleway";
+	}
+
+	.footer_links {
+		font-size: 16px;
+		font-weight: 400;
+		font-family: "Raleway";
+	}
+
+	.hero.top.aboutSchool img {
+		object-position: bottom;
+	}
+
+	.footer_social {
+		padding: 20px;
+		display: flex;
+		flex-wrap: nowrap;
+		align-content: center;
+		align-items: flex-start;
+		justify-content: center;
+	}
+
+	a {
+		color: var(--link-color);
+		text-decoration: none;
+	}
+
+	hr {
+		width: 80%;
+		background-color: #9a9a9a;
+		height: 1px;
+		border: none;
+	}
+
+	.three_images_gallery {
+		padding: 25px;
+	}
+	.testomonial {
+		background-color: var(--burger-menu-bg);
+		height: 540px;
+	}
+	.testomonial #metaslider_container_503 ul.slides li {
+		display: flex !important;
+		flex-direction: row;
+		width: 100% !important;
+		height: 100%;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+	.testomonial #metaslider_container_503 img {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		max-width: 426px;
+		max-height: 426px;
+		object-fit: cover;
+	}
+	.testomonial #metaslider_container_503 .caption-wrap {
+		width: 50%;
+		min-width: 426px;
+		height: 426px;
+		background-color: transparent;
+		color: var(--link-color);
+		position: unset;
+		opacity: 1;
+	}
+	.testomonial #metaslider_container_503 .caption-wrap .caption {
+		text-align: left;
+		font-size: 1.5rem;
+		font-family: "Raleway";
+		line-height: 1.8rem;
+	}
+	.testomonial #metaslider_container_503 .caption-wrap .caption h3 {
+		font-size: 2rem;
+		text-align: left;
+		padding: 0px;
+	}
+	.testomonial #metaslider_container_503 .caption-wrap .caption p {
+		padding: 0px;
+		margin-top: 30px;
+	}
+}
+@media screen and (min-width: 1100px) {
+	h1 {
+		margin-top: 695px;
+	}
+	nav.submenu-desktop + h1 {
+		margin-top: 64px;
+	}
+	.nav-bar-desktop {
+		display: flex;
+		justify-content: space-between;
+		width: 100%;
+		margin: auto;
+		background-color: var(--footer-header-color);
+		color: var(--text-color);
+	}
+	.nav-bar-desktop ul {
+		color: var(--text-color);
+		display: flex;
+		justify-content: space-around;
+		width: 50%;
+		list-style-type: none;
+	}
+
+	.nav-bar-desktop ul li a {
+		color: var(--desktop-menu-link-color);
+		color: var(--text-color);
+	}
+
+	.nav-bar-mobile {
+		display: none;
+	}
+	nav.submenu-desktop {
+		display: flex;
+	}
+
+	.custom-card-container * {
+		color: #4d94fe;
+		text-decoration: none;
+		border-radius: 15px;
+	}
+
+	.about_school_slide {
+		padding: 15px !important;
+	}
+
+	.intranet_image {
+		width: 100%;
+		height: 540px;
+		object-fit: cover;
+	}
+
+	.home_container .has-text-align-right {
+		padding-right: 12%;
+	}
+
+	.hero.top.aboutSchool img {
+		object-position: bottom;
+	}
+
+	.home_container .wp-block-buttons.is-content-justification-right.is-vertical {
+		padding-right: 12%;
+	}
+	.wp-block-buttons {
+		padding-left: 12%;
+	}
 }
