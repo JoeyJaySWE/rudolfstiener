@@ -6,14 +6,11 @@
 
 get_header(); ?>
 
-<div class="row mt-5">
-    <div class="col-md-4 mt-5">
-        <img class="img-thumbnail img-fluid mr-3 mb-3" src="https://media.giphy.com/media/MEMKLhAjS35YoZS5sH/giphy.gif" alt="404 - Not Found">
-    </div><!-- /col -->
-    <div class="col-md-8 mt-5">
-        <h1>404 - Not Found</h1>
-        <p>You're lost and confused. This page doesn't exist. Perhaps you want to <a href="<?php bloginfo('url'); ?>">visit the startpage</a>?</p>
-    </div><!-- /col -->
-</div><!-- /row -->
+<h1>
+	The page has not been found! Please go back!
+</h1> <br>
+<iframe src="https://giphy.com/embed/14uQ3cOFteDaU" width="480" height="360" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/404-14uQ3cOFteDaU"></a></p>
+
+
 
 <?php get_footer(); ?>

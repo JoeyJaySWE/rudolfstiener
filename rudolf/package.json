@@ -1,0 +1,11 @@
+{
+    "devDependencies": {
+        "@wordpress/scripts": "18.0.1"
+    },
+
+    "scripts":{
+        "build:css": "sass sass/custom-card/style.scss build/custom-card.css",
+        "build:scripts": "wp-scripts build",
+        "start-build": "wp-scripts start"
+    }
+}

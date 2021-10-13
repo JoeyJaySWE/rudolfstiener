@@ -1,0 +1,19 @@
+.custom-card-container {
+  position: relative;
+}
+.custom-card-container .block-editor-block-list__layout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.custom-card-container .custom-card-overlay {
+  position: absolute;
+  inset: 0px;
+}
+.custom-card-container * {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=custom-card.css.map */

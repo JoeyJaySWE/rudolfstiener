@@ -1,0 +1,17 @@
+
+.custom-slideshow-container{
+
+    position: relative;
+
+    .custom-slideshow-overlay{
+        position:absolute;
+        inset:0px;
+    }
+
+    *{
+        position: relative;
+        text-align: center;
+        z-index: 1;
+    }
+    
+}

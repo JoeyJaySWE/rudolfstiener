@@ -1,0 +1,14 @@
+.custom-card-container {
+  position: relative;
+}
+.custom-card-container .custom-card-overlay {
+  position: absolute;
+  inset: 0px;
+}
+.custom-card-container * {
+  position: relative;
+  text-align: center;
+  z-index: 1;
+}
+
+/*# sourceMappingURL=custom-slideshow.css.map */
