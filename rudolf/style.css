@@ -231,9 +231,21 @@ h1 {
 	width: fit-content;
 }
 
+.with_frm_style, .with_frm_style form, .with_frm_style .frm-show-form div.frm_description p{
+	max-width:290px;
+}
+
 .frm_forms.frm_style_formidable-style.with_frm_style {
 	padding-left: 16px;
 	padding-right: 16px;
+}
+
+.with_frm_style .frm-g-recaptcha > div > div, .with_frm_style .g-recaptcha > div > div{
+	padding:0px;
+}
+
+.with_frm_style .g-recaptcha iframe, .with_frm_style .frm-g-recaptcha iframe{
+	width:90%;
 }
 
 .about_footer {
@@ -762,7 +774,19 @@ nav.submenu-desktop li .desktop-submenu-link:hover {
 	.custom-card-container .wp-block-image img {
 		height: 370px;
 	}
-
+	.frm_forms.frm_style_formidable-style.with_frm_style {
+	padding-left: 12%;
+	padding-right: 12%;
+	}
+	
+	.with_frm_style, .with_frm_style form, .with_frm_style .frm-show-form div.frm_description p{
+		max-width:unset;
+	}
+	
+	.with_frm_style .g-recaptcha iframe, .with_frm_style .frm-g-recaptcha iframe{
+	width:100%;
+	}
+	
 	.footer_info {
 		padding-bottom: 55px;
 		padding-top: 65px;
